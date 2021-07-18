@@ -1,0 +1,48 @@
+{
+   "BestBuy": [
+	
+      {
+         "id":"01",
+         "gpu": "MSI - NVIDIA Geforce RTX 3090 GAMING X TRIO 24G - 24GB GDDR6X - PCI Express 4.0 - Graphics Card",
+         "web": "https://www.bestbuy.com/site/msi-nvidia-geforce-rtx-3090-gaming-x-trio-24g-24gb-gddr6x-pci-express-4-0-graphics-card/6468863.p?skuId=6468863",
+         "maxprice": 2399,
+	 "price": 2399
+      },
+	
+      {
+         "id":"02",
+         "gpu": "NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black",
+         "web": "https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440",
+         "maxprice": 800,
+	 "price": 699.99
+      },
+      {
+         "id":"02",
+         "gpu": "NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black",
+         "web": "https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440",
+         "maxprice": 800,
+	 "price": 699.99
+      },
+      {
+         "id":"02",
+         "gpu": "NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black",
+         "web": "https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440",
+         "maxprice": 800,
+	 "price": 699.99
+      },
+      {
+         "id":"02",
+         "gpu": "NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black",
+         "web": "https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440",
+         "maxprice": 800,
+	 "price": 699.99
+      },
+      {
+         "id":"02",
+         "gpu": "NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black",
+         "web": "https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440",
+         "maxprice": 800,
+	 "price": 699.99
+      },
+   ]
+}
