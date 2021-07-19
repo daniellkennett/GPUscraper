@@ -73,6 +73,7 @@ import scrapy
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
+import numpy as np
 
 d = {'name': [],
      'price' : [],
@@ -83,7 +84,8 @@ price_class = 'priceView-hero-price priceView-customer-price'
 button_class = 'btn btn-disabled btn-sm btn-block add-to-cart-button'
 
 url = 'https://www.bestbuy.com/site/searchpage.jsp?_dyncharset=UTF-8&browsedCategory=abcat0507002&id=pcat17071&iht=n&ks=960&list=y&qp=chipsetmanufacture_facet%3DChipset%20Manufacturer~NVIDIA%5Evideomemorycapacitysv_facet%3DVideo%20Memory%20Capacity~10%20gigabytes%5Evideomemorycapacitysv_facet%3DVideo%20Memory%20Capacity~12%20gigabytes%5Evideomemorycapacitysv_facet%3DVideo%20Memory%20Capacity~24%20gigabytes%5Evideomemorycapacitysv_facet%3DVideo%20Memory%20Capacity~8%20gigabytes&sc=Global&st=categoryid%24abcat0507002&type=page&usc=All%20Categories'
-headers = {'User-Agent' : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'}
+headers = {'User-Agent' : 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36',
+            'referer' : 'https://www.google.com/'}
 def webscrap(url, headers):
     bb = requests.get(url, headers=headers)
     soup = BeautifulSoup(bb.content.decode(), 'html.parser')
@@ -103,11 +105,19 @@ def webscrap(url, headers):
     df = pd.DataFrame(d)
     # button = df.button
     # button[3] = 'Sold In'
+    print(False)
     trigger = df.button.str.contains('Sold Out').all()
     if not trigger:
         send_email('CHECK BESTBUY NOW YOU MOTHERF****R')
         send_email('CHECK BESTBUY NOW YOU MOTHERF****R', 'dweikferris@gmail.com')
 
+
+def rand_times():
+    return np.random.randint(10)
+
+
+
 if __name__ == '__main__':
     while True:
+        time.sleep(rand_times())
         webscrap(url, headers)
